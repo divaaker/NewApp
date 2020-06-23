@@ -1,0 +1,33 @@
+<aura:component access="GLOBAL" implements="force:appHostable,flexipage:availableForAllPageTypes">
+	 <lightning:card >
+        <aura:set attribute="title">
+    	<div class="slds-form-element">
+            <p>
+            	In the manual process you can get charity data manually by enable "Get Charity data" button on object Layout. For getting data use following step.
+            </p><br/>
+            <p>
+                <b>For Account :</b>
+            </p><br/>
+            <p>
+                Quick Find > Account > Page Layout
+            </p><br/>
+            <p>
+                Step 1: Edit Page Layout which one you want to add "Get Charity data" button.<br/>
+                Step 2: Drag and Drop "Get Charity data" button from button section of Layout.<br/>
+                Step 3: Save Layout and now button will be visible on the record detail page 
+            </p><br/><br/>
+            <p>
+                <b>For Opportunity :</b>
+            </p><br/>
+            <p>
+                Quick Find > Opportunity > Page Layout
+            </p><br/>
+            <p>
+                Step 1: Edit Page Layout which one you want to add "Get Charity data" button.<br/>
+                Step 2: Drag and Drop "Get Charity data" button from button section of Layout.<br/>
+                Step 3: Save Layout and now button will be visible on the record detail page                
+            </p><br/>
+          </div>
+        </aura:set>
+    </lightning:card>
+</aura:component>

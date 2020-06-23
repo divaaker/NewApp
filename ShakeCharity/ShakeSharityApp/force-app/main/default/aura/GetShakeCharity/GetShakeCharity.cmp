@@ -1,0 +1,19 @@
+<!--quickAdd.cmp-->
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" Controller="GetCharityCtrl">
+<aura:handler name="init" value="{!this}" action="{!c.pageload}" />	
+<aura:attribute name="recordId" type="Id" />
+<aura:attribute name="singleAccount" type="Account[]"  />
+<aura:attribute name="bStatus" type="boolean" default="false"  />    
+<aura:attribute name="sStatus" type="string" />    
+    <div style="margin-top: 14%;">
+        <aura:if isTrue="{!v.sStatus == 'Success'}">
+        	<center>Data Retrieved.</center>
+        </aura:if>
+        <aura:if isTrue="{!v.sStatus == 'Failure'}">
+            <center>EIN/Tax Id is Required in Salesforce. </center>
+        </aura:if>
+        <aura:if isTrue="{!v.sStatus == 'RecordExist'}">
+        	<center>Record Already Exist.</center>
+        </aura:if>
+   </div>
+</aura:component>

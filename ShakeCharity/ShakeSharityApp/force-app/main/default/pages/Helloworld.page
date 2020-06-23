@@ -1,0 +1,4 @@
+<apex:page >
+    background-color: lightblue;
+<H1> Hello World </H1>
+</apex:page>

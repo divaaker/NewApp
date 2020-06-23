@@ -1,0 +1,114 @@
+<aura:component controller="SearchCharitydata" access="GLOBAL"  implements="force:appHostable,flexipage:availableForAllPageTypes">
+	<!--aura init handler , call js "loadData" function on component load, and display contact data on table-->   
+  <!--<aura:handler name="init" value="{!this}" action="{!c.loadData}"/>-->
+  
+    <!--Declare Attributes-->  
+  <aura:attribute name="wrapperList" type="object"/>
+  <aura:attribute name="wrapperListOrg" type="List"/>  
+  <aura:attribute name="sEIN" type="string"/>
+  <aura:attribute name="sRecordId" type="string"/>  
+  <aura:attribute name="ReponseList" type="List"/>
+  <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+  <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+  <aura:attribute name="Spinner" type="boolean" default="false"/>  
+  <aura:if isTrue="{!v.Spinner}">      
+        <div aura:id="spinnerId" class="slds-spinner_container">
+           <div class="slds-spinner--brand  slds-spinner slds-spinner--medium slds-is-relative" role="alert">
+             <span class="slds-assistive-text">Loading</span>
+             <div class="slds-spinner__dot-a"></div>
+             <div class="slds-spinner__dot-b"></div>
+           </div>
+        </div>
+ 	</aura:if>   
+  <div class="slds-p-around--large">
+      
+      <h1 style="font-size:25px;">Search charity data</h1> 
+      <br/>
+
+      <lightning:input name="input4" aura:id="sOrg" label="Enter EIN or Org Name" placeholder="Please enter search string"/>   
+   <lightning:button label="Search" title="Neutral action" onclick="{! c.searchDataOrg }"/>   
+      <br /><br />   
+  <!--https://www.lightningdesignsystem.com/components/data-tables/-->
+    <table class="slds-table slds-table--bordered slds-table--cell-buffer">
+      <thead>
+        <tr class="slds-text-title--caps">
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">EIN</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">Name</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="Department">Street</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">City</div>
+          </th>
+            <th scope="col">
+            <div class="slds-truncate" title="First Name">State</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">Zip</div>
+          </th>
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">In Salesforce</div>
+          </th>  
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">Action</div>
+          </th>
+        </tr>
+      </thead>
+      <!--table body start, 
+        Iterate contact list as a <tr>
+        -->
+      <tbody>
+          
+          <aura:iteration items="{!v.wrapperListOrg}" var="item" indexVar="index">
+          <tr>
+            <th scope="row">
+                <div class="slds-truncate" title="EIN" >{!item.sEIN}</div>
+            </th>
+            <th scope="row">
+              <div class="slds-truncate" title="Name">{!item.sName}</div>
+            </th>
+            <th scope="row">
+              <div class="slds-truncate" title="Street">{!item.sStreet}</div>
+            </th>
+            <th scope="row">
+               <div class="slds-truncate" title="City">{!item.sCity}</div>
+            </th>
+            <th scope="row">
+               <div class="slds-truncate" title="State">{!item.sState}</div>
+            </th>
+            <th scope="row">
+               <div class="slds-truncate" title="Zip">{!item.sZip}</div>
+            </th>
+             <th scope="row">
+               <div class="slds-truncate" title="State">
+                   <lightning:input type="checkbox" label="" name="input3" checked="{!item.sIsSalesforce}" disabled="true"/>
+               </div>
+            </th>
+            <th scope="row">
+                <aura:if isTrue="{!item.sExist}">
+                   <lightning:button variant="bare-inverse" 
+                                          label="View Record"
+                                          title="View Record"
+                                          iconName="utility:download"
+                                     	  value="{!item.sRecordID}"		
+                                          onclick="{!c.openViewRecord}"/>
+                    <aura:set attribute="else">
+                      <lightning:button variant="bare-inverse" 
+                                          label="Create Record"
+                                          title="Create Record"
+                                          iconName="utility:download"
+                                          value="{!item.sEIN}"	
+                                          onclick="{!c.createRecordDataOrg}"/>
+                    </aura:set>
+                  </aura:if> 
+            </th>  
+          </tr>
+          </aura:iteration>
+      </tbody>
+    </table>
+  </div>
+</aura:component>

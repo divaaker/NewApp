@@ -1,0 +1,16 @@
+<apex:page standardController="Campaign">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:form >
+    <apex:pageBlock title="LGC Funds">
+       <apex:pageBlockSection title="New LGC member">
+
+       <apex:outputField value="{!campaign.LGC_Code__c}"/>
+       <apex:outputField value="{!campaign.name}"/>
+       <apex:outputField value="{!campaign.NumberOfContacts}"/>
+       <apex:outputField value="{!campaign.NumberOfOpportunities}"/>
+
+       </apex:pageBlockSection>
+    </apex:pageBlock>
+  </apex:form>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

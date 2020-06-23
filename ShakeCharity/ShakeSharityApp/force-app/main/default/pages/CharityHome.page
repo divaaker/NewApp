@@ -1,0 +1,16 @@
+<apex:page sidebar="false" >
+    <apex:includeLightning />
+
+    <div id="lightning" />
+
+    <script>
+        $Lightning.use("c:CharityAboutApp", function() {
+          $Lightning.createComponent("c:CharityAbout",
+          { label : "Press Me!" },
+          "lightning",
+          function(cmp) {
+            // do some stuff
+          });
+        });
+    </script>    
+</apex:page>

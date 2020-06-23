@@ -1,0 +1,77 @@
+<aura:component access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <aura:attribute name="showModal" type="boolean" default="false"/>
+    <aura:attribute name="username" type="string" default=""/>
+    <aura:attribute name="password" type="string" default=""/>
+    <aura:attribute name="subscriptionkey" type="string" default=""/>
+	<lightning:card aura:id="templateHeader" >
+        <aura:set attribute="title">
+            <div class="slds-media slds-no-space slds-grow">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="utility:settings" />
+                </div>
+               
+                <div class="slds-media__body">
+                    <h1 class="slds-page-header__title slds-p-right_x-small">
+                        <button class="slds-button slds-button_reset slds-type-focus slds-truncate" aria-haspopup="true" title="">
+                            <span class="slds-grid slds-has-flexi-truncate slds-grid_vertical-align-center">
+                                <span class="slds-truncate" title="Recently Viewed">Charity Shake Settings</span>
+                            </span>
+                        </button>
+                    </h1>
+                </div>
+            </div>
+        </aura:set>
+        </lightning:card><br/>
+    	 <div>
+             <p style="font-size: 1rem;line-height: 1.25;">
+            	
+            </p><br/>
+             <lightning:button variant="brand" label="Connect to charity" title="Connect to charity" onclick="{! c.handleClick }" />
+    	</div><br/>
+     <lightning:tabset >
+        <lightning:tab label="Manual Process">
+            <c:ManualCharitySetting />
+        </lightning:tab>
+    </lightning:tabset>
+    <aura:if isTrue="{!v.showModal}">            
+        <!--###### MODAL BOX Start######--> 
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <!-- ###### MODAL BOX HEADER Start ######-->
+                <header class="slds-modal__header">
+                    <lightning:buttonIcon iconName="utility:close"
+                                          onclick="{! c.closeModelSign }"
+                                          alternativeText="close"
+                                          variant="bare-inverse"
+                                          class="slds-modal__close"/>
+                    <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"></h2>
+                </header>
+                <!--###### MODAL BOX BODY Part Start######-->
+                <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                    <lightning:input aura:id="Username" label="GuideStar Username"
+                                     name="Username"
+                                     value="{!v.username}"
+                                     required="true"
+                                     messageWhenRangeUnderflow="Username is required"/>
+                    <lightning:input aura:id="password" label="Guidestar Password"
+                                     name="password"
+                                     value="{!v.password}"
+                                     required="true"
+                                     messageWhenRangeUnderflow="Password is required"/>				
+                    <lightning:input aura:id="ApiKey" label="GuideStar Subscription key"
+                                     name="ApiKey"
+                                     value="{!v.subscriptionkey}"
+                                     required="true"
+                                     messageWhenRangeUnderflow="Subscription key is required"
+                                     messageWhenTypeMismatch="Subscription key is required"/>
+                    <footer class="slds-modal__footer">
+                     <lightning:button variant="neutral"  label="Submit" title="Submit" onclick="{! c.saveDetails }"/>
+                </footer>
+                    
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+        <!--###### MODAL BOX Part END Here ######--> 
+	</aura:if>
+</aura:component>

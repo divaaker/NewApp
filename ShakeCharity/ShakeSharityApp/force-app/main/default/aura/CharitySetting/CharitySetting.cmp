@@ -1,0 +1,34 @@
+<aura:component access="GLOBAL" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    
+    <lightning:card >
+        <aura:set attribute="title">
+    	<div class="slds-form-element">
+            <p>
+            	It is the charity shake setting process. For configure charity settings we can enable for following standard object and will save EIN value in configure 
+                object.
+            </p><br/>
+            <p>
+            	Basically there are two standard object for storing the data and we can configure only one object at a time.
+            </p><br/>
+            <label class="slds-checkbox_toggle slds-grid">
+                <span class="slds-form-element__label slds-m-bottom_none"><b>For Account</b></span>
+               <ui:inputCheckbox change="{!c.selectChange}"/>
+              <span id="toggle-desc" class="slds-checkbox_faux_container" aria-live="assertive">
+                <span class="slds-checkbox_faux"></span>
+                <span class="slds-checkbox_on">Show</span>
+                <span class="slds-checkbox_off">Hide</span>
+              </span>
+            </label>
+          </div>
+          <div aura:id="DivID" class="slds-hide">
+             <ul>
+                <li>account 1</li>
+                <li>account 2</li>
+                <li>account 3</li>
+                <li>account 4</li>
+                <li>account 5</li>    
+             </ul>  
+           </div>  
+        </aura:set>
+    </lightning:card>
+</aura:component>

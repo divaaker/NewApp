@@ -1,0 +1,8 @@
+<apex:page standardcontroller="NFGdata__c" >
+<apex:form >
+  <!-- Begin Default Content REMOVE THIS -->
+          <!--apex:outputField label="{Donor Full Name f}"/ -->
+        <apex:outputField value="{!NFGdata__c.Donor_Full_Name_f__c}"/>
+  <!-- End Default Content REMOVE THIS -->
+</apex:form>
+</apex:page>

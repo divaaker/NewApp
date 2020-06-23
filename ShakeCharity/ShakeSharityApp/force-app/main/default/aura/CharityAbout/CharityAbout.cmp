@@ -1,0 +1,56 @@
+<aura:component access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+    <lightning:card aura:id="templateHeader">
+        <aura:set attribute="title">
+            <div class="slds-media slds-no-space slds-grow">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="standard:article" />
+                </div>
+                <div class="slds-media__body">
+                    <h1 class="slds-page-header__title slds-p-right_x-small">
+                        <button class="slds-button slds-button_reset slds-type-focus slds-truncate" aria-haspopup="true" title="">
+                            <span class="slds-grid slds-has-flexi-truncate slds-grid_vertical-align-center">
+                                <span class="slds-truncate" title="Recently Viewed">Charity Shake About</span>
+                            </span>
+                        </button>
+                    </h1>
+                    <nav class="slds-text-heading_small">
+                        Enriching charity Data 
+                    </nav>
+                </div>
+            </div>
+        </aura:set>
+    </lightning:card><br/><br/><br/>
+    	<div class="slds-media__body">
+            <h1 class="slds-page-header__title slds-p-right_x-small">
+                <button class="slds-button slds-button_reset slds-type-focus slds-truncate" aria-haspopup="true" title="">
+                    <span class="slds-grid slds-has-flexi-truncate slds-grid_vertical-align-center">
+                        <span class="slds-truncate" title="Recently Viewed"><b>About</b></span>
+                    </span>
+                </button>
+            </h1><br/>
+            <p style="font-size: 12pt;">
+            	This app use for enrich data of charity and accuracy, comprehensiveness, and reliability of the data that provides to be more efficient and effective for non-profit organization. 
+            </p>
+            <p style="font-size: 12pt;">
+            	It is the most legitimate and all-encompassing solution on the market.
+            </p>
+            <br/>
+            <p style="font-size: 12pt;">
+            	Its verify that the charity is eligible to receive tax-deductible donations and is in good standing with the IRS. Also verify that grant applicants are eligible for grants.
+            </p><br/>
+            <p style="font-size: 12pt;">
+                App providing auto populate grant applications for non-profits and save or print non-profit verification for compliance and reference.
+            </p><br/>
+            <p style="font-size: 12pt;">
+                This app will provides with in-depth information and evaluate charities before they donate and Integrate non-profit information into CRM system by populating basic fields.	
+            </p><br/>
+            <p style="font-size: 12pt;">
+            	For getting all the data using EIN, Organization Id, Organization Name.
+            </p><br/>
+            <p style="font-size: 12pt;">
+                <b>For configureation please goto Check Setting page.</b>
+            </p>
+        </div><br/><br/><br/>
+            <lightning:button variant="brand" label="Goto Charity Setting" iconName="utility:new" iconPosition="left" />
+
+</aura:component>

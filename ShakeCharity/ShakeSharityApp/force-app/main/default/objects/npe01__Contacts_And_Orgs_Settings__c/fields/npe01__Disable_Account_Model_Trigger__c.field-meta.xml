@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>npe01__Disable_Account_Model_Trigger__c</fullName>
+    <defaultValue>false</defaultValue>
+    <deprecated>false</deprecated>
+    <description>DEPRECATED.  Trigger behavior now controlled in the Trigger Configuration page of NPSP Settings.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Check this to turn off the Account Model trigger. Accounts will no longer be automatically created for Contacts. Only use this if you understand the ramifications. Turning off the account model could get your data into an inconsistent state.</inlineHelpText>
+    <label>DEPRECATED-Disable Account Model Trigger</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

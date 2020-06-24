@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_many_people_are_served_indirectly__c</fullName>
+    <description>How many people are served indirectly by your organization annually?</description>
+    <externalId>false</externalId>
+    <inlineHelpText>How many people are served indirectly by your organization annually?</inlineHelpText>
+    <label>How many people are served indirectly?</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

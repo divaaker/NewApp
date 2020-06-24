@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>What_sector_do_you_work_in__c</fullName>
+    <externalId>false</externalId>
+    <label>What sector do you work in?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Business / Finance</fullName>
+                <default>false</default>
+                <label>Business / Finance</label>
+            </value>
+            <value>
+                <fullName>Government/Politics</fullName>
+                <default>false</default>
+                <label>Government/Politics</label>
+            </value>
+            <value>
+                <fullName>Health / Education</fullName>
+                <default>false</default>
+                <label>Health / Education</label>
+            </value>
+            <value>
+                <fullName>Nonprofit/Philanthropy</fullName>
+                <default>false</default>
+                <label>Nonprofit/Philanthropy</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Tech</fullName>
+                <default>false</default>
+                <label>Tech</label>
+            </value>
+            <value>
+                <fullName>Other [Write-In]</fullName>
+                <default>false</default>
+                <label>Other [Write-In]</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

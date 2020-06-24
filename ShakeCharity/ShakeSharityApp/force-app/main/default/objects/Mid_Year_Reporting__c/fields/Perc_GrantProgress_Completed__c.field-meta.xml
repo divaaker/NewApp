@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Perc_GrantProgress_Completed__c</fullName>
+    <description>How far along grantees are towards meeting grant goals in percentage form for all activities.</description>
+    <externalId>false</externalId>
+    <label>% of Grant Progress Completed</label>
+    <precision>18</precision>
+    <required>true</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Percent</type>
+</CustomField>

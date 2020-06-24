@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Major_Changes_Had_Will_Impact_Work__c</fullName>
+    <description>Describe any major changes that occurred during the past year within your organization or outside of the organization that had or will impact the work supported by the grant.</description>
+    <externalId>false</externalId>
+    <label>Major Changes Had/Will Impact Work</label>
+    <length>32768</length>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

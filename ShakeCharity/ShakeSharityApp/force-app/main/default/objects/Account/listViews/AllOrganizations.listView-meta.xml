@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllOrganizations</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Relationship_to_LCF__c</columns>
+    <columns>Current_Annual_Budget__c</columns>
+    <columns>npe01__One2OneContact__c</columns>
+    <columns>Organization_Type__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>notEqual</operation>
+        <value>Account.HH_Account</value>
+    </filters>
+    <label>All Organizations</label>
+</ListView>

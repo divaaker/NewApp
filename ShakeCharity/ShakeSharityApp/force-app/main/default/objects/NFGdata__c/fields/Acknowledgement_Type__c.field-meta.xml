@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Acknowledgement_Type__c</fullName>
+    <description>How is acknowledgement letter to be sent - by post or by email.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Acknowledgement letter - by post or by email?</inlineHelpText>
+    <label>Acknowledgement Type</label>
+    <length>10</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

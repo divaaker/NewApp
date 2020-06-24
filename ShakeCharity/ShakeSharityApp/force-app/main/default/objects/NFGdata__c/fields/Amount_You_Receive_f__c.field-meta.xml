@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_You_Receive_f__c</fullName>
+    <description>Formula derived field to address formatting issue in the imported data.</description>
+    <externalId>false</externalId>
+    <formula>IF ( LEN(Donation_Amount__c)&gt;8, (value ( MID( Donation_Amount__c , 2 , (LEN( Donation_Amount__c)-8) ) &amp; RIGHT(Donation_Amount__c, 6))), VALUE( RIGHT( Donation_Amount__c , ( LEN( Donation_Amount__c )- 1 ) )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Amount You Receive f</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

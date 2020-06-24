@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Source_webpage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  Source__c =&quot;Network for Good&quot;, &quot;Old&quot;, ( if( Source__c =&quot;GiveCorps&quot;, &quot;New&quot;, (if(Source__c=&quot;Facebook&quot;, &quot;Facebook&quot;, &quot;Unknown&quot;)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Source_webpage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

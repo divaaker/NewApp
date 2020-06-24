@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__SMS</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <height>600</height>
+    <linkType>page</linkType>
+    <masterLabel>Send SMS</masterLabel>
+    <openType>sidebar</openType>
+    <page>CnP_PaaS__CnP_SMS_Send</page>
+    <protected>false</protected>
+</WebLink>

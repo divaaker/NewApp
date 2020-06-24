@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Typical_Payment_Method__c</fullName>
+    <description>Typical method of payment.</description>
+    <externalId>false</externalId>
+    <label>Typical Payment Method</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Old NFG (DonateNow)</fullName>
+                <color>#FF6666</color>
+                <default>true</default>
+                <label>Old NFG (DonateNow)</label>
+            </value>
+            <value>
+                <fullName>New NFG (GiveCorps)</fullName>
+                <color>#33FF33</color>
+                <default>false</default>
+                <label>New NFG (GiveCorps)</label>
+            </value>
+            <value>
+                <fullName>Check</fullName>
+                <color>#E27001</color>
+                <default>false</default>
+                <label>Check</label>
+            </value>
+            <value>
+                <fullName>ACH or EFT</fullName>
+                <color>#A845DC</color>
+                <default>false</default>
+                <label>ACH or EFT</label>
+            </value>
+            <value>
+                <fullName>PayPal</fullName>
+                <color>#F3D904</color>
+                <default>false</default>
+                <label>PayPal</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

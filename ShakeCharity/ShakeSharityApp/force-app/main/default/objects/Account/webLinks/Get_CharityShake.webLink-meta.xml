@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Get_CharityShake</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Get CharityShake</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/30.0/apex.js&quot;)}
+
+if(&quot;{!Account.EIN__c}&quot; === &quot;&quot;){
+alert(&quot;EIN/Tax Id is Required&quot;);
+
+}
+else{
+sforce.apex.execute(&quot;AWSCallout&quot;,&quot;callAwsgateway&quot;,{EIN:&quot;{!Account.EIN__c}&quot;});
+alert(&quot;Data got successfully&quot;);
+document.location.reload(true)
+}</url>
+</WebLink>

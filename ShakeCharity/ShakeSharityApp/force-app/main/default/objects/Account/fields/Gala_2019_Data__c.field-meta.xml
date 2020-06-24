@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gala_2019_Data__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to Identify Imported Data From Givelively</description>
+    <externalId>false</externalId>
+    <label>Gala 2019 Data - Do not delete</label>
+    <type>Checkbox</type>
+</CustomField>

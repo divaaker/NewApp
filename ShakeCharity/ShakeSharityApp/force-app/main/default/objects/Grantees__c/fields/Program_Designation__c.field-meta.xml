@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program_Designation__c</fullName>
+    <externalId>false</externalId>
+    <label>Program Designation</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Latino Giving Circle Network</fullName>
+                <default>false</default>
+                <label>Latino Giving Circle Network</label>
+            </value>
+            <value>
+                <fullName>Latino Nonprofit Accelerator</fullName>
+                <default>false</default>
+                <label>Latino Nonprofit Accelerator</label>
+            </value>
+            <value>
+                <fullName>California Latino Agenda</fullName>
+                <default>false</default>
+                <label>California Latino Agenda</label>
+            </value>
+            <value>
+                <fullName>Healthy Communities</fullName>
+                <default>false</default>
+                <label>Healthy Communities</label>
+            </value>
+            <value>
+                <fullName>Children &amp; Youth</fullName>
+                <default>false</default>
+                <label>Children &amp; Youth</label>
+            </value>
+            <value>
+                <fullName>Civic Engagement</fullName>
+                <default>false</default>
+                <label>Civic Engagement</label>
+            </value>
+            <value>
+                <fullName>Sponsorship</fullName>
+                <default>false</default>
+                <label>Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Fund-a-Need</fullName>
+                <default>false</default>
+                <label>Fund-a-Need</label>
+            </value>
+            <value>
+                <fullName>Arabella Martinez and David B. Carlson Fund</fullName>
+                <default>false</default>
+                <label>Arabella Martinez and David B. Carlson Fund</label>
+            </value>
+            <value>
+                <fullName>Oportun Corporate Advised Fund</fullName>
+                <default>false</default>
+                <label>Oportun Corporate Advised Fund</label>
+            </value>
+            <value>
+                <fullName>NorCal Wildfire Relief Fund</fullName>
+                <default>false</default>
+                <label>NorCal Wildfire Relief Fund</label>
+            </value>
+            <value>
+                <fullName>Mexico Earthquake Relief Fund</fullName>
+                <default>false</default>
+                <label>Mexico Earthquake Relief Fund</label>
+            </value>
+            <value>
+                <fullName>Puerto Rico Hurricane Relief Fund</fullName>
+                <default>false</default>
+                <label>Puerto Rico Hurricane Relief Fund</label>
+            </value>
+            <value>
+                <fullName>SoCal Wildfire &amp; Mudslide Relief Fund</fullName>
+                <default>false</default>
+                <label>SoCal Wildfire &amp; Mudslide Relief Fund</label>
+            </value>
+            <value>
+                <fullName>Nuestro Futuro Fund</fullName>
+                <default>false</default>
+                <label>Nuestro Futuro Fund</label>
+            </value>
+            <value>
+                <fullName>Roots of Latino Power Initiative</fullName>
+                <default>false</default>
+                <label>Roots of Latino Power Initiative</label>
+            </value>
+            <value>
+                <fullName>2020 Census</fullName>
+                <default>false</default>
+                <label>2020 Census</label>
+            </value>
+            <value>
+                <fullName>Mobilize the Latino Vote</fullName>
+                <default>false</default>
+                <label>Mobilize the Latino Vote</label>
+            </value>
+            <value>
+                <fullName>Advocacy Trust Fund</fullName>
+                <default>false</default>
+                <label>Advocacy Trust Fund</label>
+            </value>
+            <value>
+                <fullName>Economic Mobility</fullName>
+                <default>false</default>
+                <label>Economic Mobility</label>
+            </value>
+            <value>
+                <fullName>Love Not Fear Fund</fullName>
+                <default>false</default>
+                <label>Love Not Fear Fund</label>
+            </value>
+            <value>
+                <fullName>Latino Entrepreneurship Fund</fullName>
+                <default>false</default>
+                <label>Latino Entrepreneurship Fund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grantee_Contact_Info__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AND( Grantee_Contact_1__c &lt;&gt;&quot;&quot;,Grantee_Contact_2__c &lt;&gt;&quot;&quot;) , Grantee_Contact_1__r.FirstName &amp;&quot; &quot;&amp; Grantee_Contact_1__r.LastName &amp;  BR() &amp;  
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Title)),Grantee_Contact_1__r.Title&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Phone )),Grantee_Contact_1__r.Phone&amp;BR() ,&quot;&quot;)&amp; 
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Email)),Grantee_Contact_1__r.Email,&quot;&quot;)&amp; BR()&amp;BR()&amp;
+
+Grantee_Contact_2__r.FirstName &amp;&quot; &quot;&amp; Grantee_Contact_2__r.LastName &amp; BR()&amp;
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Title)),Grantee_Contact_2__r.Title&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Phone)),Grantee_Contact_2__r.Phone&amp;BR() ,&quot;&quot;) &amp;
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Email)),Grantee_Contact_2__r.Email,&quot;&quot;) , 
+
+IF( Grantee_Contact_1__c &lt;&gt;&quot;&quot;,Grantee_Contact_1__r.FirstName &amp;&quot; &quot;&amp; Grantee_Contact_1__r.LastName &amp; BR() &amp;  
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Title)),Grantee_Contact_1__r.Title&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Phone)),Grantee_Contact_1__r.Phone&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_1__r.Email)),Grantee_Contact_1__r.Email,&quot;&quot;),
+
+IF( Grantee_Contact_2__c &lt;&gt;&quot;&quot;,Grantee_Contact_2__r.FirstName &amp;&quot; &quot;&amp; Grantee_Contact_2__r.LastName &amp; BR() &amp;  
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Title)),Grantee_Contact_2__r.Title&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Phone)),Grantee_Contact_2__r.Phone&amp;BR(),&quot;&quot;) &amp; 
+IF(NOT(ISBLANK(Grantee_Contact_2__r.Email)),Grantee_Contact_2__r.Email,&quot;&quot;),&quot;&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Grantee Contact Info</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

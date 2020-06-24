@@ -25,8 +25,8 @@
       <h1 style="font-size:25px;">Search charity data</h1> 
       <br/>
 
-      <lightning:input name="input4" aura:id="sOrg" label="Enter EIN or Org Name" placeholder="Please enter search string"/>   
-   <lightning:button label="Search" title="Neutral action" onclick="{! c.searchDataOrg }"/>   
+      <lightning:input name="input4" aura:id="sOrg" label="Enter EIN or Org keyword" placeholder="Please enter search string like 'club' or EIN"/>   
+   	<lightning:button label="Search" title="Neutral action" onclick="{! c.searchDataOrg }"/>   
       <br /><br />   
   <!--https://www.lightningdesignsystem.com/components/data-tables/-->
     <table class="slds-table slds-table--bordered slds-table--cell-buffer">
@@ -54,8 +54,11 @@
             <div class="slds-truncate" title="First Name">In Salesforce</div>
           </th>  
           <th scope="col">
-            <div class="slds-truncate" title="First Name">Action</div>
+            <div class="slds-truncate" title="First Name">Salesforce Action</div>
           </th>
+          <th scope="col">
+            <div class="slds-truncate" title="First Name">Charity Action</div>
+          </th>  
         </tr>
       </thead>
       <!--table body start, 
@@ -89,18 +92,34 @@
                </div>
             </th>
             <th scope="row">
-                <aura:if isTrue="{!item.sExist}">
+                <aura:if isTrue="{!item.sRecordID != null}">
                    <lightning:button variant="bare-inverse" 
-                                          label="View Record"
-                                          title="View Record"
-                                          iconName="utility:download"
+                                          label="View Account"
+                                          title="View Account"
+                                          iconName="utility:preview"
                                      	  value="{!item.sRecordID}"		
+                                          onclick="{!c.openViewRecord}"/>
+                    <aura:set attribute="else">
+                      <lightning:button variant="bare-inverse" 
+                                          label="View Account"
+                                          title="View Account"
+                                          iconName="utility:preview" disabled="true"/>
+                    </aura:set>
+                  </aura:if> 
+            </th>
+            <th scope="row">
+                <aura:if isTrue="{!item.sCharityRecord != null}">
+                   <lightning:button variant="bare-inverse" 
+                                          label="View ShakeCharity"
+                                          title="View ShakeCharity"
+                                          iconName="utility:preview"
+                                     	  value="{!item.sCharityRecord}"		
                                           onclick="{!c.openViewRecord}"/>
                     <aura:set attribute="else">
                       <lightning:button variant="bare-inverse" 
                                           label="Create Record"
                                           title="Create Record"
-                                          iconName="utility:download"
+                                          iconName="utility:add"
                                           value="{!item.sEIN}"	
                                           onclick="{!c.createRecordDataOrg}"/>
                     </aura:set>

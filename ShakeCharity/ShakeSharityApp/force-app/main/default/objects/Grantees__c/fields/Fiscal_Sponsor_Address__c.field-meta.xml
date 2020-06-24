@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiscal_Sponsor_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>Grantee_Organization__r.Parent.BillingStreet  &amp; BR() &amp;  Grantee_Organization__r.Parent.BillingCity &amp; 
+ &quot;,&quot; &amp; &quot; &quot; &amp; Grantee_Organization__r.Parent.BillingState &amp; &quot; &quot; &amp; Grantee_Organization__r.Parent.BillingPostalCode &amp; BR() &amp;
+Grantee_Organization__r.Parent.BillingCountry</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fiscal Sponsor Address</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

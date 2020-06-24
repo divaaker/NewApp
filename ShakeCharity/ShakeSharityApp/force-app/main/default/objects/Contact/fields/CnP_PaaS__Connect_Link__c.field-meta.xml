@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Connect_Link__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>IF(CnP_PaaS__CnP_Connect_Alias_Index__c != null, HYPERLINK(&apos;https://Connect.ClickandPledge.com/Fundraiser/&apos;+CnP_PaaS__CnP_Connect_Alias_Index__c, &apos;https://Connect.ClickandPledge.com/Fundraiser/&apos;+CnP_PaaS__CnP_Connect_Alias_Index__c, &apos;_blank&apos;), &apos;&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>C&amp;P Connect Global Profile</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

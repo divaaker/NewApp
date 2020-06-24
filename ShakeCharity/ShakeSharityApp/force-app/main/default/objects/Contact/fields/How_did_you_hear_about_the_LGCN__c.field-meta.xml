@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>How_did_you_hear_about_the_LGCN__c</fullName>
+    <externalId>false</externalId>
+    <label>How did you hear about the LGCN?</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>I attended an LCF event</fullName>
+                <default>false</default>
+                <label>I attended an LCF event</label>
+            </value>
+            <value>
+                <fullName>Through a personal connection</fullName>
+                <default>false</default>
+                <label>Through a personal connection</label>
+            </value>
+            <value>
+                <fullName>Through the media (social or news)</fullName>
+                <default>false</default>
+                <label>Through the media (social or news)</label>
+            </value>
+            <value>
+                <fullName>Other [write-in]</fullName>
+                <default>false</default>
+                <label>Other [write-in]</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Stage__c</fullName>
+    <externalId>false</externalId>
+    <label>Stage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Nominee</fullName>
+                <default>false</default>
+                <label>Nominee</label>
+            </value>
+            <value>
+                <fullName>Nomination Declined</fullName>
+                <default>false</default>
+                <label>Nomination Declined</label>
+            </value>
+            <value>
+                <fullName>Invited to Apply</fullName>
+                <default>false</default>
+                <label>Invited to Apply</label>
+            </value>
+            <value>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+                <label>Submitted</label>
+            </value>
+            <value>
+                <fullName>Failed to Apply</fullName>
+                <default>false</default>
+                <label>Failed to Apply</label>
+            </value>
+            <value>
+                <fullName>Withdrew Application</fullName>
+                <default>false</default>
+                <label>Withdrew Application</label>
+            </value>
+            <value>
+                <fullName>Docket Review</fullName>
+                <default>false</default>
+                <label>Docket Review</label>
+            </value>
+            <value>
+                <fullName>Invited to Present</fullName>
+                <default>false</default>
+                <label>Invited to Present</label>
+            </value>
+            <value>
+                <fullName>Declined</fullName>
+                <default>false</default>
+                <label>Declined</label>
+            </value>
+            <value>
+                <fullName>VP Approval</fullName>
+                <default>false</default>
+                <label>VP Approval</label>
+            </value>
+            <value>
+                <fullName>CEO Approval</fullName>
+                <default>false</default>
+                <label>CEO Approval</label>
+            </value>
+            <value>
+                <fullName>Ready for GAL</fullName>
+                <default>false</default>
+                <label>Ready for GAL</label>
+            </value>
+            <value>
+                <fullName>GAL Processing</fullName>
+                <default>false</default>
+                <label>GAL Processing</label>
+            </value>
+            <value>
+                <fullName>GAL Submitted</fullName>
+                <default>false</default>
+                <label>GAL Submitted</label>
+            </value>
+            <value>
+                <fullName>Funded</fullName>
+                <default>false</default>
+                <label>Funded</label>
+            </value>
+            <value>
+                <fullName>Reporting</fullName>
+                <default>false</default>
+                <label>Reporting</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Awarded</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Awarded</label>
+            </value>
+            <value>
+                <fullName>Invited</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Invited</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

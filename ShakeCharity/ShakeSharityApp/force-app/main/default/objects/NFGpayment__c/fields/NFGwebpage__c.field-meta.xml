@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NFGwebpage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( NFGSource__c =&quot;Network for Good&quot;, &quot;Old&quot;, ( if( NFGSource__c =&quot;GiveCorps&quot;, &quot;New&quot;, &quot;Unknown&quot;)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NFGwebpage</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

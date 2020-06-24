@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Send_Tax_Letter__c</fullName>
+    <description>##Conga created button:00b1Y000001a95S</description>
+    <externalId>false</externalId>
+    <formula>&quot;&amp;id=&quot; + Id +
+&quot;&amp;emailfromid=0051Y000009PPm7QAG&quot; + 
+&quot;&amp;cetid=a1R1Y000006UJBNUA4&quot; + 
+&quot;&amp;templateid=a1a1Y00000YsNZzQAN&quot; + 
+&quot;&amp;ofn=&quot; + FirstName +&quot; &quot; + LastName+&quot; &quot; + &quot;{Template.Label}&quot; +
+&quot;&amp;fp0=1&quot; + 
+&quot;&amp;sc0=1&quot; + 
+&quot;&amp;_sc1=Attachments&quot; + 
+&quot;&amp;qmode=SendEmail&quot;</formula>
+    <label>Send Tax Letter</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fee_You_Pay_f__c</fullName>
+    <description>Formula derived field to address formatting issue in the imported data.</description>
+    <externalId>false</externalId>
+    <formula>VALUE( TRIM( RIGHT(  Fee_You_Pay__c  , ( LEN(  Fee_You_Pay__c  )- FIND(&quot;$&quot;,  Fee_You_Pay__c  ) ) )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Fee You Pay f</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

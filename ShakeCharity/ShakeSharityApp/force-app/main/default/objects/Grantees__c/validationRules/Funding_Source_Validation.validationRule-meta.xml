@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Funding_Source_Validation</fullName>
+    <active>true</active>
+    <description>When Program Designation is not LGCN then Fouding Source is required</description>
+    <errorConditionFormula>AND( OR(ISPICKVAL( Program_Designation__c , &quot;Latino Nonprofit Accelerator&quot;),
+ISPICKVAL( Program_Designation__c , &quot;California Latino Agenda&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Healthy Communities&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Children &amp; Youth&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Civic Engagement&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Sponsorship&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Roots of Latino Power Initiative&quot;),
+ISPICKVAL( Program_Designation__c , &quot;2020 Census&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Mobilize the Latino Vote&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Advocacy Trust Fund&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Economic Mobility&quot;),
+ISPICKVAL( Program_Designation__c , &quot;Latino Entrepreneurship Fund&quot;)
+), 
+OR(ISPICKVAL( Stage__c ,&quot;VP Approval&quot;),
+ISPICKVAL(Stage__c,&quot;CEO Approval&quot;),
+ISPICKVAL(Stage__c,&quot;Funded&quot;),
+ISPICKVAL(Stage__c,&quot;Ready for GAL&quot;),
+ISPICKVAL(Stage__c,&quot;GAL Submitted&quot;),
+ISPICKVAL(Stage__c,&quot;Reporting&quot;)),
+ISBLANK( Funding_Source__c ) )</errorConditionFormula>
+    <errorDisplayField>Funding_Source__c</errorDisplayField>
+    <errorMessage>Please Enter the Funding Source</errorMessage>
+</ValidationRule>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Foundation_Code__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This defines the type of organization as follows:
+Code Description
+1 Corporation
+2 Trust
+3 Co-operative
+4 Partnership
+5 Association</inlineHelpText>
+    <label>Organization Code</label>
+    <length>100</length>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

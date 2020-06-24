@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LGC_Code__c</fullName>
+    <description>Giving Circle number - for data import use.  References to LGC Funds Excel file.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>1-SF, 2-Pleasanton, 3-Peninsula, 4-East Bay(w), 5-SF(m), 6-Solano, 7-Sacto, 8-Tech, 9-SE Bay,
+10-So Bay, 11-LGBTQ, 12-East Bay(m), 13-CV, 14-LA, 15-Cisco, 16-Wine, 17-SanDiego, 18-Inland Empire</inlineHelpText>
+    <label>LGC Code</label>
+    <length>10</length>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

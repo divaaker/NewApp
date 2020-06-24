@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Broadcaster_Campaign__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Broadcaster Campaign</label>
+    <referenceTo>CnP_PaaS__Broadcaster_Campaign__c</referenceTo>
+    <relationshipName>Broadcaster_Member_Activity</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

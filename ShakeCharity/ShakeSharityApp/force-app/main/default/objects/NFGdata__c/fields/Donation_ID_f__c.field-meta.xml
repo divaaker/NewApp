@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donation_ID_f__c</fullName>
+    <description>Formula derived field to address formatting issue in the imported data.</description>
+    <externalId>false</externalId>
+    <formula>TEXT( VALUE ( TRIM ( Donation_Id__c ) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Donation ID f</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

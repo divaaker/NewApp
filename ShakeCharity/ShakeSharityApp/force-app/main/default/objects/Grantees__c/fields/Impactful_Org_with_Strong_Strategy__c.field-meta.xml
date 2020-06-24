@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Impactful_Org_with_Strong_Strategy__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Impactful Org with Strong Strategy Scores</inlineHelpText>
+    <label>Impactful Org with Strong Strategy</label>
+    <summarizedField>Docket_Review__c.mpactful_Org_with_Strong_Strategy__c</summarizedField>
+    <summaryForeignKey>Docket_Review__c.Grant__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Donation_Amount_f__c</fullName>
+    <description>Formula to convert formatting : from text to currency, stripping out  dollar sign &quot;$&quot; and comma &quot;,&quot;.</description>
+    <externalId>false</externalId>
+    <formula>IF ( LEN(Donation_Amount__c)&gt;8, (value ( MID( Donation_Amount__c , 2 , (LEN( Donation_Amount__c)-8) ) &amp; RIGHT(Donation_Amount__c, 6))), VALUE( RIGHT( Donation_Amount__c , ( LEN( Donation_Amount__c )- 1 ) )))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Donation Amount f</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

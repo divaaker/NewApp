@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Aligns_with_GC_Goals__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Sum of Organization Aligns with GC Goals Scores</inlineHelpText>
+    <label>Organization Aligns with GC Goals</label>
+    <summarizedField>Docket_Review__c.Organization_Aligns_with_GC_Goals__c</summarizedField>
+    <summaryForeignKey>Docket_Review__c.Grant__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

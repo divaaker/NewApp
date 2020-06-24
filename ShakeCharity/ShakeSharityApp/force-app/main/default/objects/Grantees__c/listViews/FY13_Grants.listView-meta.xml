@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FY13_Grants</fullName>
+    <columns>NAME</columns>
+    <columns>Grantee_Organization__c</columns>
+    <columns>Grant_Amount__c</columns>
+    <columns>Program_Designation__c</columns>
+    <columns>Grantee_Contact_1__c</columns>
+    <columns>GrantFiscal_Year__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>GrantFiscal_Year__c</field>
+        <operation>equals</operation>
+        <value>FY2012-2013</value>
+    </filters>
+    <label>FY13 Grants</label>
+</ListView>

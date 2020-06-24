@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Virtual_Terminal</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Virtual Terminal</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/apex/CnP_PaaS__VirtualTerminal?SFCampaignid={!Campaign.Id}&amp;ItemSFCampaignId={!Campaign.Id}</url>
+</WebLink>

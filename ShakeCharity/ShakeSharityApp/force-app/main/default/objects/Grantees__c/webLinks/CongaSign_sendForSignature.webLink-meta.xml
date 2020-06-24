@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CongaSign_sendForSignature</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <linkType>url</linkType>
+    <masterLabel>Send Contract (No Fiscal Sponsor)</masterLabel>
+    <openType>replace</openType>
+    <protected>false</protected>
+    <url>/apex/APXTConga4__Conga_Composer?SolMgr=1
+&amp;serverUrl={!API.Partner_Server_URL_370}
+&amp;Id={!Grantees__c.Id}
+
+&amp;CSVisible=1
+
+&amp;CSRoutingType=SERIAL
+
+&amp;CSRecipient1={!Grantees__c.Grantee_Contact_1Id__c}
+
+
+
+&amp;TemplateId=a1a1Y00000YTJFiQAP
+&amp;DefaultPDF=1
+
+&amp;OFN=Grant+Agreement+for+{!Grantees__c.Grantee_Organization__c}
+&amp;DS7=1141</url>
+</WebLink>

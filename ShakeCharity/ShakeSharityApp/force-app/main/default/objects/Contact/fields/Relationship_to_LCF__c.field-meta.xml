@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_to_LCF__c</fullName>
+    <description>Describes relationship to LCF.</description>
+    <externalId>false</externalId>
+    <label>Relationship to LCF</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Affinity Group Donor</fullName>
+                <default>false</default>
+                <label>Affinity Group Donor</label>
+            </value>
+            <value>
+                <fullName>Donor</fullName>
+                <default>false</default>
+                <label>Donor</label>
+            </value>
+            <value>
+                <fullName>ERG Lead</fullName>
+                <default>false</default>
+                <label>ERG Lead</label>
+            </value>
+            <value>
+                <fullName>Expert</fullName>
+                <default>false</default>
+                <label>Expert</label>
+            </value>
+            <value>
+                <fullName>Fiscal Sponsee Donor</fullName>
+                <default>false</default>
+                <label>Fiscal Sponsee Donor</label>
+            </value>
+            <value>
+                <fullName>Funder</fullName>
+                <default>false</default>
+                <label>Funder</label>
+            </value>
+            <value>
+                <fullName>Grantee</fullName>
+                <default>false</default>
+                <label>Grantee</label>
+            </value>
+            <value>
+                <fullName>Latino Legacy Circle member</fullName>
+                <default>false</default>
+                <label>Latino Legacy Circle member</label>
+            </value>
+            <value>
+                <fullName>LCF Giving Circle</fullName>
+                <default>false</default>
+                <label>LCF Giving Circle Member</label>
+            </value>
+            <value>
+                <fullName>LCF Intern/Fellow</fullName>
+                <default>false</default>
+                <label>LCF Intern/Fellow</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>NextGen LGCN member</fullName>
+                <default>false</default>
+                <label>NextGen LGCN member</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Partner</fullName>
+                <default>false</default>
+                <label>Partner</label>
+            </value>
+            <value>
+                <fullName>Past Funder</fullName>
+                <default>false</default>
+                <label>Past Funder</label>
+            </value>
+            <value>
+                <fullName>Past Grantee</fullName>
+                <default>false</default>
+                <label>Past Grantee</label>
+            </value>
+            <value>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+                <label>Prospect</label>
+            </value>
+            <value>
+                <fullName>Top Funders</fullName>
+                <default>false</default>
+                <label>Top Funders</label>
+            </value>
+            <value>
+                <fullName>Trend Setter</fullName>
+                <default>false</default>
+                <label>Trend Setter</label>
+            </value>
+            <value>
+                <fullName>Trustee</fullName>
+                <default>false</default>
+                <label>Trustee</label>
+            </value>
+            <value>
+                <fullName>Vendor</fullName>
+                <default>false</default>
+                <label>Vendor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

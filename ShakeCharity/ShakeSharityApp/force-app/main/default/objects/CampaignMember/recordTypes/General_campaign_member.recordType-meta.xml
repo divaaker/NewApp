@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>General_campaign_member</fullName>
+    <active>true</active>
+    <description>Campaign Member that is not LGC member.</description>
+    <label>General campaign member</label>
+    <picklistValues>
+        <picklist>Member_Participation_Type__c</picklist>
+        <values>
+            <fullName>Event_Facilitator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event_General_Invite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event_Panelist</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event_Speaker</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event_Sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Event_Vendor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GC Member w private sponsor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Next Gen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Response_Type__c</picklist>
+        <values>
+            <fullName>Attended</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Declined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Show</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ticket_Type__c</picklist>
+        <values>
+            <fullName>Community</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Familia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Friends</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hope</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unity</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VIP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Typical_Payment_Method__c</picklist>
+        <values>
+            <fullName>ACH or EFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New NFG %28GiveCorps%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Old NFG %28DonateNow%29</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>PayPal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

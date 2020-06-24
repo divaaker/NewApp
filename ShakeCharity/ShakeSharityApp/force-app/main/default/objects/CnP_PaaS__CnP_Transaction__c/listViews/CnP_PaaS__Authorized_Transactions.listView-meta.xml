@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Authorized_Transactions</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>NAME</columns>
+    <columns>CnP_PaaS__TransactionTimeZone__c</columns>
+    <columns>CnP_PaaS__Account__c</columns>
+    <columns>CnP_PaaS__Contact__c</columns>
+    <columns>CnP_PaaS__TotalCharged__c</columns>
+    <columns>CnP_PaaS__PaymentType__c</columns>
+    <columns>CnP_PaaS__CreditCard4x4__c</columns>
+    <columns>CnP_PaaS__sf_Campaign__c</columns>
+    <columns>CnP_PaaS__Tracker__c</columns>
+    <columns>CnP_PaaS__Transaction_Result__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CnP_PaaS__Transaction_Result__c</field>
+        <operation>equals</operation>
+        <value>Authorized</value>
+    </filters>
+    <filters>
+        <field>CnP_PaaS__PaymentType__c</field>
+        <operation>equals</operation>
+        <value>Purchase Order,Invoice,Cash,CustomPaymentType</value>
+    </filters>
+    <label>Authorized Transactions</label>
+</ListView>

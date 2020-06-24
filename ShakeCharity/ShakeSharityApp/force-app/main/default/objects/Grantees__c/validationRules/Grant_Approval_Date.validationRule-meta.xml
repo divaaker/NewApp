@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Approval_Date</fullName>
+    <active>true</active>
+    <description>IF stage is VP Approval, CEO Approval or above, approved date is required</description>
+    <errorConditionFormula>AND(OR(  ISPICKVAL( Stage__c,&quot;VP Approval&quot;),ISPICKVAL( Stage__c ,&quot;CEO Approval&quot;),ISPICKVAL( Stage__c,&quot;Ready for GAL&quot;)), ISBLANK( Date_Approved__c ) )</errorConditionFormula>
+    <errorDisplayField>Date_Approved__c</errorDisplayField>
+    <errorMessage>Please Enter Date Approved</errorMessage>
+</ValidationRule>

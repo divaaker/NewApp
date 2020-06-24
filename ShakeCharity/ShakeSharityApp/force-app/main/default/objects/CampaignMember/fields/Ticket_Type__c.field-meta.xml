@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ticket_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Ticket Type</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Friends</fullName>
+                <default>false</default>
+                <label>Friends</label>
+            </value>
+            <value>
+                <fullName>Familia</fullName>
+                <default>false</default>
+                <label>Familia</label>
+            </value>
+            <value>
+                <fullName>Hope</fullName>
+                <default>false</default>
+                <label>Hope</label>
+            </value>
+            <value>
+                <fullName>Unity</fullName>
+                <default>false</default>
+                <label>Unity</label>
+            </value>
+            <value>
+                <fullName>Community</fullName>
+                <default>false</default>
+                <label>Community</label>
+            </value>
+            <value>
+                <fullName>VIP</fullName>
+                <default>false</default>
+                <label>VIP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

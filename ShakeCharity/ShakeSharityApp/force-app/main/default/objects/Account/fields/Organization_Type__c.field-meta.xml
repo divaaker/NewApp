@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Organization_Type__c</fullName>
+    <description>Organization characteristics.</description>
+    <externalId>false</externalId>
+    <label>Organization Type</label>
+    <required>false</required>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Advocacy_Policy</fullName>
+                <default>false</default>
+                <label>Advocacy &amp; Policy</label>
+            </value>
+            <value>
+                <fullName>Arts &amp; Culture</fullName>
+                <default>false</default>
+                <label>Arts &amp; Culture</label>
+            </value>
+            <value>
+                <fullName>Boys &amp; Men of Color Empowerment</fullName>
+                <default>false</default>
+                <label>Boys &amp; Men of Color Empowerment</label>
+            </value>
+            <value>
+                <fullName>Civic Engagement</fullName>
+                <default>false</default>
+                <label>Civic Engagement</label>
+            </value>
+            <value>
+                <fullName>Community Engagement</fullName>
+                <default>false</default>
+                <label>Community Engagement</label>
+            </value>
+            <value>
+                <fullName>Corporate</fullName>
+                <default>false</default>
+                <label>Corporate</label>
+            </value>
+            <value>
+                <fullName>Economic Development</fullName>
+                <default>false</default>
+                <label>Economic Development</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>Entrepreneurship</fullName>
+                <default>false</default>
+                <label>Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>Environment &amp; Climate Change</fullName>
+                <default>false</default>
+                <label>Environment &amp; Climate Change</label>
+            </value>
+            <value>
+                <fullName>Family &amp; Parent Engagement</fullName>
+                <default>false</default>
+                <label>Family &amp; Parent Engagement</label>
+            </value>
+            <value>
+                <fullName>Financial Institute</fullName>
+                <default>false</default>
+                <label>Financial Institute</label>
+            </value>
+            <value>
+                <fullName>Food/Wine</fullName>
+                <default>false</default>
+                <label>Food/Wine</label>
+            </value>
+            <value>
+                <fullName>Foundation</fullName>
+                <default>false</default>
+                <label>Foundation</label>
+            </value>
+            <value>
+                <fullName>Government</fullName>
+                <default>false</default>
+                <label>Government</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Housing</fullName>
+                <default>false</default>
+                <label>Housing</label>
+            </value>
+            <value>
+                <fullName>Immigrant Rights &amp; Legal Services</fullName>
+                <default>false</default>
+                <label>Immigrant Rights &amp; Legal Services</label>
+            </value>
+            <value>
+                <fullName>Leadership Development &amp; Youth Empowerment</fullName>
+                <default>false</default>
+                <label>Leadership Development &amp; Youth Empowerment</label>
+            </value>
+            <value>
+                <fullName>LGBTQ Rights</fullName>
+                <default>false</default>
+                <label>LGBTQ Rights</label>
+            </value>
+            <value>
+                <fullName>Media</fullName>
+                <default>false</default>
+                <label>Media</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+            <value>
+                <fullName>Research &amp; Data</fullName>
+                <default>false</default>
+                <label>Research &amp; Data</label>
+            </value>
+            <value>
+                <fullName>S.T.E.M. &amp; Workforce Development</fullName>
+                <default>false</default>
+                <label>S.T.E.M. &amp; Workforce Development</label>
+            </value>
+            <value>
+                <fullName>Violence Prevention</fullName>
+                <default>false</default>
+                <label>Violence Prevention</label>
+            </value>
+            <value>
+                <fullName>Voter Registration</fullName>
+                <default>false</default>
+                <label>Voter Registration</label>
+            </value>
+            <value>
+                <fullName>Women &amp; Girls Empowerment</fullName>
+                <default>false</default>
+                <label>Women &amp; Girls Empowerment</label>
+            </value>
+            <value>
+                <fullName>Youth Empowerment</fullName>
+                <default>false</default>
+                <label>Youth Empowerment</label>
+            </value>
+            <value>
+                <fullName>Philanthropy</fullName>
+                <default>false</default>
+                <label>Philanthropy</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>7</visibleLines>
+</CustomField>

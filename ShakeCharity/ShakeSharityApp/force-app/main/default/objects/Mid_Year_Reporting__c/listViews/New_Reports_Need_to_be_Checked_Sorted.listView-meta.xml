@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Reports_Need_to_be_Checked_Sorted</fullName>
+    <columns>NAME</columns>
+    <columns>Grant_Reference__c</columns>
+    <columns>Organization__c</columns>
+    <columns>Name__c</columns>
+    <columns>Perc_GrantProgress_Completed__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Grant_Reference__c</field>
+        <operation>equals</operation>
+        <value>Mid-Year Reports to be Checked</value>
+    </filters>
+    <label>New Reports Need to be Checked &amp; Sorted</label>
+</ListView>

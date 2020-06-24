@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MustHaveContactRole</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISBLANK(npe01__Contact_Id_for_Role__c)</errorConditionFormula>
+    <errorMessage>Must have Contact Role defined.</errorMessage>
+</ValidationRule>

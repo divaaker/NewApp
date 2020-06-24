@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Focus_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Grant Focus Area</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>2020 Census</fullName>
+                <default>false</default>
+                <label>2020 Census</label>
+            </value>
+            <value>
+                <fullName>Advocacy Trust Fund</fullName>
+                <default>false</default>
+                <label>Advocacy Trust Fund</label>
+            </value>
+            <value>
+                <fullName>California Latino Agenda</fullName>
+                <default>false</default>
+                <label>California Latino Agenda</label>
+            </value>
+            <value>
+                <fullName>Community Conversaciónes</fullName>
+                <default>false</default>
+                <label>Community Conversaciónes</label>
+            </value>
+            <value>
+                <fullName>Core Operating Support</fullName>
+                <default>false</default>
+                <label>Core Operating Support</label>
+            </value>
+            <value>
+                <fullName>Economic Mobility</fullName>
+                <default>false</default>
+                <label>Economic Mobility</label>
+            </value>
+            <value>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+                <label>Endowment</label>
+            </value>
+            <value>
+                <fullName>Gala</fullName>
+                <default>false</default>
+                <label>Gala</label>
+            </value>
+            <value>
+                <fullName>Gubernatorial Forum</fullName>
+                <default>false</default>
+                <label>Gubernatorial Forum</label>
+            </value>
+            <value>
+                <fullName>Healthy Communities</fullName>
+                <default>false</default>
+                <label>Healthy Communities</label>
+            </value>
+            <value>
+                <fullName>Latina Entrepreneurship Fund</fullName>
+                <default>false</default>
+                <label>Latina Entrepreneurship Fund</label>
+            </value>
+            <value>
+                <fullName>Latino Giving Circle Network</fullName>
+                <default>false</default>
+                <label>Latino Giving Circle Network</label>
+            </value>
+            <value>
+                <fullName>Latino Legacy Circle</fullName>
+                <default>false</default>
+                <label>Latino Legacy Circle</label>
+            </value>
+            <value>
+                <fullName>Latino Nonprofit Accelerator</fullName>
+                <default>false</default>
+                <label>Latino Nonprofit Accelerator</label>
+            </value>
+            <value>
+                <fullName>Latino Policy Summit</fullName>
+                <default>false</default>
+                <label>Latino Policy Summit</label>
+            </value>
+            <value>
+                <fullName>Mobilize the Latino Vote</fullName>
+                <default>false</default>
+                <label>Mobilize the Latino Vote</label>
+            </value>
+            <value>
+                <fullName>NorCal Wildfire Fund</fullName>
+                <default>false</default>
+                <label>NorCal Wildfire Fund</label>
+            </value>
+            <value>
+                <fullName>Nuestro Futuro Fund</fullName>
+                <default>false</default>
+                <label>Nuestro Futuro Fund</label>
+            </value>
+            <value>
+                <fullName>Silicon Valley Accelerator Lab</fullName>
+                <default>false</default>
+                <label>Silicon Valley Accelerator Lab</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

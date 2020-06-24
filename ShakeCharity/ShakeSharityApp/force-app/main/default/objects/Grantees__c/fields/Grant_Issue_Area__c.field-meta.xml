@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Issue_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Grant Issue Area</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Civic Engagement</fullName>
+                <default>false</default>
+                <label>Civic Engagement</label>
+            </value>
+            <value>
+                <fullName>Youth Empowerment</fullName>
+                <default>false</default>
+                <label>Youth Empowerment</label>
+            </value>
+            <value>
+                <fullName>Leadership Development</fullName>
+                <default>false</default>
+                <label>Leadership Development</label>
+            </value>
+            <value>
+                <fullName>Entrepreneurship</fullName>
+                <default>false</default>
+                <label>Entrepreneurship</label>
+            </value>
+            <value>
+                <fullName>Education</fullName>
+                <default>false</default>
+                <label>Education</label>
+            </value>
+            <value>
+                <fullName>S.T.E.M</fullName>
+                <default>false</default>
+                <label>S.T.E.M</label>
+            </value>
+            <value>
+                <fullName>Arts / Culture</fullName>
+                <default>false</default>
+                <label>Arts / Culture</label>
+            </value>
+            <value>
+                <fullName>Immigrant Rights &amp; Legal Services</fullName>
+                <default>false</default>
+                <label>Immigrant Rights &amp; Legal Services</label>
+            </value>
+            <value>
+                <fullName>Health</fullName>
+                <default>false</default>
+                <label>Health</label>
+            </value>
+            <value>
+                <fullName>Women &amp; Girls Empowerment</fullName>
+                <default>false</default>
+                <label>Women &amp; Girls Empowerment</label>
+            </value>
+            <value>
+                <fullName>Boys &amp; Men of Color Empowerment</fullName>
+                <default>false</default>
+                <label>Boys &amp; Men of Color Empowerment</label>
+            </value>
+            <value>
+                <fullName>LGBTQ Rights</fullName>
+                <default>false</default>
+                <label>LGBTQ Rights</label>
+            </value>
+            <value>
+                <fullName>Capacity Building</fullName>
+                <default>false</default>
+                <label>Capacity Building</label>
+            </value>
+            <value>
+                <fullName>Disaster Relief</fullName>
+                <default>false</default>
+                <label>Disaster Relief</label>
+            </value>
+            <value>
+                <fullName>Economic Empowerment</fullName>
+                <default>false</default>
+                <label>Economic Empowerment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GC_Pledge_Terms__c</fullName>
+    <description>TEMPORARY field for setting up FormAssembly web-to-lead.</description>
+    <externalId>false</externalId>
+    <label>GC Pledge Terms</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Monthly $84</fullName>
+                <default>false</default>
+                <label>Monthly $84</label>
+            </value>
+            <value>
+                <fullName>Quarterly $250</fullName>
+                <default>false</default>
+                <label>Quarterly $250</label>
+            </value>
+            <value>
+                <fullName>Today $1000</fullName>
+                <default>false</default>
+                <label>Today $1000</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

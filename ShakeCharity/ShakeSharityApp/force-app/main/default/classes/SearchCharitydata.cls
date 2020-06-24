@@ -193,6 +193,9 @@ global class SearchCharitydata {
     @AuraEnabled
     public static List<wrapperClass> callAwsgatewayOrgSearch(string EIN) {
         map<string,Id> mapAcc = new map<string,Id>();
+        map<string,Id> mapAccount = new map<string,Id>();
+        set<wrapperClass> lstWrapper = new set<wrapperClass>();
+        string sEINNumber = EIN;
         EIN = EIN.replace('-', '');
         system.debug(EIN.length());
         List<ShakeCharity__c> lstShakeCharity = [SELECT Id, EIN__c FROM ShakeCharity__c WHERE EIN__c != null];
@@ -201,8 +204,40 @@ global class SearchCharitydata {
                 mapAcc.put(oShakeCharity.EIN__c,oShakeCharity.Id);
             }
         }
+        List<Account> lstAccountEIN = [SELECT id, EIN__c, Name, BillingCity, BillingState, BillingStreet, BillingPostalCode  FROM Account WHERE EIN__c =: sEINNumber];
+        if(lstAccountEIN != null && lstAccountEIN.size()>0){
+            for(Account oAcc : lstAccountEIN){
+                if(!oAcc.Name.contains('Household')){
+                    wrapperClass returnwrapperClass = new  wrapperClass ();
+                    returnwrapperClass.sSortName  = oAcc.Name;
+                    returnwrapperClass.sEIN  = oAcc.EIN__c;
+                    returnwrapperClass.sName  = oAcc.Name;
+                    returnwrapperClass.sCity  = oAcc.BillingCity;
+                    returnwrapperClass.sSTATE  = oAcc.BillingState;
+                    returnwrapperClass.sZip  =  oAcc.BillingPostalCode;
+                    returnwrapperClass.sStreet  =  oAcc.BillingStreet;
+                    returnwrapperClass.sExist = true;
+                    returnwrapperClass.sIsSalesforce = true;
+                    returnwrapperClass.sRecordID = oAcc.Id;
+                    if(oAcc.EIN__c != null){
+                        string oEIN = mapAcc.get(oAcc.EIN__c.replace('-', ''));
+                        system.debug(oEIN);
+                        if(oEIN != null){
+                            returnwrapperClass.sCharityRecord = mapAcc.get(oAcc.EIN__c.replace('-', ''));
+                        }    
+                    }
+                    lstWrapper.add(returnwrapperClass);    
+                }
+            }
+        }
+        
+        List<Account> lstAccountCheck = [SELECT Id, EIN__c FROM Account WHERE EIN__c != null];
+        if(lstAccountCheck != null && lstAccountCheck.size()>0){
+            for(Account oAccount : lstAccountCheck){
+                mapAccount.put(oAccount.EIN__c.replace('-', ''),oAccount.Id);
+            }
+        }
         system.debug(mapAcc);
-        set<wrapperClass> lstWrapper = new set<wrapperClass>(); 
         Http http = new Http();
         HttpResponse response;
         List<ShakeCharity__c> updateShakeCharity = new List<ShakeCharity__c>();
@@ -247,9 +282,12 @@ global class SearchCharitydata {
                     if(oEIN != null){
                         returnwrapperClass.sExist = true;
                         returnwrapperClass.sIsSalesforce = true;
-                        returnwrapperClass.sRecordID = mapAcc.get(string.valueof(data.get('EIN')));
+                        returnwrapperClass.sCharityRecord = mapAcc.get(string.valueof(data.get('EIN')));
                     }
-                    lstWrapper.add(returnwrapperClass);
+                	Object objEIN = mapAccount.get(string.valueof(data.get('EIN')));
+                    if(objEIN == null){
+                    	lstWrapper.add(returnwrapperClass);
+                    }
                     System.debug(lstWrapper);
                 break;
             }  
@@ -274,10 +312,18 @@ global class SearchCharitydata {
                         returnwrapperClass.sExist = true;
                         returnwrapperClass.sIsSalesforce = true;
                         returnwrapperClass.sRecordID = oAcc.Id;
+                        if(oAcc.EIN__c != null){
+                        	string oEIN = mapAcc.get(oAcc.EIN__c.replace('-', ''));
+                            system.debug(oEIN);
+                            if(oEIN != null){
+                                returnwrapperClass.sCharityRecord = mapAcc.get(oAcc.EIN__c.replace('-', ''));
+                            }    
+                        }
                         lstWrapper.add(returnwrapperClass);    
                     }
                 }
             }
+
             EIN = EIN.toUppercase();
             string sEndPoint = 'https://3k0fpzhw53.execute-api.us-east-2.amazonaws.com/Pro/charitydata/'+EIN;
             HttpRequest request = new HttpRequest();
@@ -311,13 +357,17 @@ global class SearchCharitydata {
                     returnwrapperClass.sSTATE  = string.valueof(customerAttributes.get('STATE'));
                     returnwrapperClass.sName  = string.valueof(customerAttributes.get('OrgNAME'));
                     returnwrapperClass.sStreet  = string.valueof(customerAttributes.get('STREET'));
+                 	returnwrapperClass.sExist = false;
                     Object oEIN = mapAcc.get(string.valueof(customerAttributes.get('EIN')));
                     if(oEIN != null){
                         returnwrapperClass.sExist = true;
                         returnwrapperClass.sIsSalesforce = true;
-                        returnwrapperClass.sRecordID = mapAcc.get(string.valueof(customerAttributes.get('EIN')));
+                        returnwrapperClass.sCharityRecord = mapAcc.get(string.valueof(customerAttributes.get('EIN')));
                     }
-                    lstWrapper.add(returnwrapperClass);
+                    Object objEIN = mapAccount.get(string.valueof(customerAttributes.get('EIN')));
+                    if(objEIN == null){
+                    	lstWrapper.add(returnwrapperClass);
+                    }
                     System.debug(lstWrapper);
                 } 
             }
@@ -378,6 +428,10 @@ global class SearchCharitydata {
         Http http = new Http();
         List<ShakeCharity__c> createShakeCharity = new List<ShakeCharity__c>();
         system.debug('EIN====='+EIN );
+        List<Account> oAccount = [SELECT Id FROM Account WHERE EIN__c =:EIN LIMIT 1];
+        if(oAccount.size() >0){
+        	sAccountId = oAccount[0].Id;     
+        }
         EIN = EIN.replace('-', '');
         string sEndPoint = 'https://agbg6e5ci7.execute-api.us-east-2.amazonaws.com/CharityBeta/charitydata/'+EIN;
         HttpRequest request = new HttpRequest();
@@ -395,11 +449,6 @@ global class SearchCharitydata {
         system.debug(parser );
         system.debug(parser.nextToken());
         system.debug(parser.getCurrentToken());
-        
-        List<Account> oAccount = [SELECT Id FROM Account WHERE EIN__c =:EIN LIMIT 1];
-        if(oAccount.size() >0){
-        	sAccountId = oAccount[0].Id;     
-        }
         Account newAcc = new Account();
         ShakeCharity__c oShakeCharity = new ShakeCharity__c();
         if(parser.getCurrentToken() == JSONToken.START_OBJECT) {

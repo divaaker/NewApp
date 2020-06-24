@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Update_Contact</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>Update Contact &amp; Delete Alias</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/15.0/apex.js&quot;)}
+     
+var id=&apos;{!CnP_PaaS__Contact_Mail_ids__c.Id}&apos;;
+var result = sforce.apex.execute(&quot;CnP_PaaS.autoCompleteController&quot;,&quot;updatecontact&quot;, {aid:&quot;{!CnP_PaaS__Contact_Mail_ids__c.Id}&quot;});
+
+if(result!=&apos;&apos;){
+      window.location=&apos;/&apos;+result;
+}else{
+    alert(&quot;Error found&quot;);
+}</url>
+</WebLink>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>The_population_we_serve_is_at_least_51__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Amount of people the organization serves on a yearly basis.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The population we serve is at least 51% Latino</inlineHelpText>
+    <label>At Least 51% Latino population served</label>
+    <type>Checkbox</type>
+</CustomField>

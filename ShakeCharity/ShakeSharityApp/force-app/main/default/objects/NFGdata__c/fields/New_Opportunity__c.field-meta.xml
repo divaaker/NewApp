@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_Opportunity__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>New Opportunity record needs to be created.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>If new Contact - create new Oppty.
+If existing Oppty is Closed/Posted -&gt; create new Oppty.</inlineHelpText>
+    <label>New Opportunity</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

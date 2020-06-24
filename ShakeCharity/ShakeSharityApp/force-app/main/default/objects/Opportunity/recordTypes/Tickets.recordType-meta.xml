@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tickets</fullName>
+    <active>true</active>
+    <businessProcess>Donation</businessProcess>
+    <description>Tickets bought for gala or other special events</description>
+    <label>Tickets</label>
+    <picklistValues>
+        <picklist>CnP_PaaS__CnP_Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Convenience Fee</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Discount</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Item</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tax</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Giving_Circle__c</picklist>
+        <values>
+            <fullName>Central Valley Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Conexion Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Bay Men%27s Latino Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Bay Women%27s Latina Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inland Empire Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LGBTQ Latinx Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latinos in Tech Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Orange County Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peninsula Latina Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pleasanton Latina Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco Men%27s Latino Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco Women%27s Latina Giving Circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solano County Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bay Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern East Bay LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wine Country Latino Giving Circle %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grant_Focus_Area__c</picklist>
+        <values>
+            <fullName>California Latino Agenda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Community Conversaciónes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Core Operating Support</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Endowment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gubernatorial Forum</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthy Communities</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latino Giving Circle Network</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latino Nonprofit Accelerator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latino Policy Summit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NorCal Wildfire Fund</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Nuestro Futuro Fund</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Grant_History__c</picklist>
+        <values>
+            <fullName>Grant Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Grant - New Funder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Program Area - Past Funder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>One Time Grant</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Donation_Type__c</picklist>
+        <values>
+            <fullName>Corporate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Foundation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Kind</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-Profit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Ticket_Type__c</picklist>
+        <values>
+            <fullName>After Party</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Individual Ticket</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LCF Friends %28for INDIVIDUALS only%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Funding</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Member_Level__c</picklist>
+        <values>
+            <fullName>Bronze</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Silver</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Membership_Origin__c</picklist>
+        <values>
+            <fullName>New</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Reacquire</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__DeliveryInstallationStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yet to begin</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npo02__systemHouseholdContactRoleProcessor__c</picklist>
+        <values>
+            <fullName>All Opportunities</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No Opportunities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

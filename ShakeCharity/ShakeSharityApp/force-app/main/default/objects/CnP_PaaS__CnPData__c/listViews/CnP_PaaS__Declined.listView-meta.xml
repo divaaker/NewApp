@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Declined</fullName>
+    <columns>NAME</columns>
+    <columns>CnP_PaaS__OrderNumber__c</columns>
+    <columns>CnP_PaaS__Contact__c</columns>
+    <columns>CnP_PaaS__Name__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>CnP_PaaS__Total_Charged__c</columns>
+    <columns>CnP_PaaS__StatusID__c</columns>
+    <columns>CnP_PaaS__Transaction_Result__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CnP_PaaS__Transaction_Result__c</field>
+        <operation>equals</operation>
+        <value>Declined</value>
+    </filters>
+    <label>Declined</label>
+</ListView>

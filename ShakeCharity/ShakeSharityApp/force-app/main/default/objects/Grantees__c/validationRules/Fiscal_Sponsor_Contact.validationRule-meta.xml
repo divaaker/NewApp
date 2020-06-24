@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Fiscal_Sponsor_Contact</fullName>
+    <active>true</active>
+    <description>If fiscally sponsored, require fiscal sponsor contact</description>
+    <errorConditionFormula>AND(Not(ISBLANK( Fiscal_Sponsor__c ) ), 
+OR( ISPICKVAL( Stage__c , &quot;VP Approval&quot;),
+ISPICKVAL(Stage__c,&quot;CEO Approval&quot;),
+ISPICKVAL(Stage__c,&quot;Funded&quot;),
+ISPICKVAL(Stage__c,&quot;Ready for GAL&quot;),
+ISPICKVAL(Stage__c,&quot;GAL Submitted&quot;),
+ISPICKVAL(Stage__c,&quot;Reporting&quot;)), ISBLANK( Fiscal_Sponsor_Contact__c )  )</errorConditionFormula>
+    <errorDisplayField>Fiscal_Sponsor_Contact__c</errorDisplayField>
+    <errorMessage>Please Enter Fiscal Sponsor Contact</errorMessage>
+</ValidationRule>

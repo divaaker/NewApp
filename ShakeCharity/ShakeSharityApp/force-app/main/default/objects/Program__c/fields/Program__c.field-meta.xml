@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Program__c</fullName>
+    <externalId>false</externalId>
+    <label>Program</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Gala</fullName>
+                <default>false</default>
+                <label>Gala</label>
+            </value>
+            <value>
+                <fullName>California Latino Agenda</fullName>
+                <default>false</default>
+                <label>California Latino Agenda</label>
+            </value>
+            <value>
+                <fullName>Community Conversaciónes</fullName>
+                <default>false</default>
+                <label>Community Conversaciónes</label>
+            </value>
+            <value>
+                <fullName>Core Operating Support</fullName>
+                <default>false</default>
+                <label>Core Operating Support</label>
+            </value>
+            <value>
+                <fullName>Endowment</fullName>
+                <default>false</default>
+                <label>Endowment</label>
+            </value>
+            <value>
+                <fullName>Gubernatorial Forum</fullName>
+                <default>false</default>
+                <label>Gubernatorial Forum</label>
+            </value>
+            <value>
+                <fullName>Healthy Communities</fullName>
+                <default>false</default>
+                <label>Healthy Communities</label>
+            </value>
+            <value>
+                <fullName>Latino Giving Circle Network</fullName>
+                <default>false</default>
+                <label>Latino Giving Circle Network</label>
+            </value>
+            <value>
+                <fullName>Latino Nonprofit Accelerator</fullName>
+                <default>false</default>
+                <label>Latino Nonprofit Accelerator</label>
+            </value>
+            <value>
+                <fullName>Latino Policy Summit</fullName>
+                <default>false</default>
+                <label>Latino Policy Summit</label>
+            </value>
+            <value>
+                <fullName>NorCal Wildfire Fund</fullName>
+                <default>false</default>
+                <label>NorCal Wildfire Fund</label>
+            </value>
+            <value>
+                <fullName>Nuestro Futuro Fund</fullName>
+                <default>false</default>
+                <label>Nuestro Futuro Fund</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

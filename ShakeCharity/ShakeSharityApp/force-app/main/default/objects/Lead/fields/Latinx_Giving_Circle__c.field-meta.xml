@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Latinx_Giving_Circle__c</fullName>
+    <description>Field for accepting forms online (ref FormAssembly).</description>
+    <externalId>false</externalId>
+    <label>Latinx GC</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Valley LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Central Valley LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Cisco Conexion LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Cisco Conexion LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>East Bay LGC (men)</fullName>
+                <default>false</default>
+                <label>East Bay LGC (men)</label>
+            </value>
+            <value>
+                <fullName>East Bay LGC (women)</fullName>
+                <default>false</default>
+                <label>East Bay LGC (women)</label>
+            </value>
+            <value>
+                <fullName>Inland Empire LGC</fullName>
+                <default>false</default>
+                <label>Inland Empire LGC</label>
+            </value>
+            <value>
+                <fullName>Latinos in Tech (co-ed)</fullName>
+                <default>false</default>
+                <label>Latinos in Tech (co-ed)</label>
+            </value>
+            <value>
+                <fullName>LatinX LGBTQ GC (co-ed)</fullName>
+                <default>false</default>
+                <label>LatinX LGBTQ GC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Los Angeles LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Los Angeles LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Peninsula LGC (women)</fullName>
+                <default>false</default>
+                <label>Peninsula LGC (women)</label>
+            </value>
+            <value>
+                <fullName>Pleasanton LGC (women)</fullName>
+                <default>false</default>
+                <label>Pleasanton LGC (women)</label>
+            </value>
+            <value>
+                <fullName>Sacramento LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Sacramento LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>San Diego LGC</fullName>
+                <default>false</default>
+                <label>San Diego LGC</label>
+            </value>
+            <value>
+                <fullName>San Francisco LGC (men)</fullName>
+                <default>false</default>
+                <label>San Francisco LGC (men)</label>
+            </value>
+            <value>
+                <fullName>San Francisco LGC (women)</fullName>
+                <default>false</default>
+                <label>San Francisco LGC (women)</label>
+            </value>
+            <value>
+                <fullName>Solano County LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Solano County LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>South Bay LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>South Bay LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Southern East Bay LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Southern East Bay LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Wine Country LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Wine Country LGC (co-ed)</label>
+            </value>
+            <value>
+                <fullName>Santa Barbara LGC (co-ed)</fullName>
+                <default>false</default>
+                <label>Santa Barbara LGC (co-ed)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

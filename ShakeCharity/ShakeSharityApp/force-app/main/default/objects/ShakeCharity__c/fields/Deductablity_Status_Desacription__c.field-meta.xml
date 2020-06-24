@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Deductablity_Status_Desacription__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Deductibility Code signifies whether contributions made to an organization are deductible.
+Code Description
+1 - Contributions are deductible.
+2 - Contributions are not deductible.
+4 - Contributions are deductible by treaty (foreign organizations).</inlineHelpText>
+    <label>Deductablity Code</label>
+    <length>10000</length>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grantee_Contact_1__c</fullName>
+    <deleteConstraint>Restrict</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>CEO or Org Director</inlineHelpText>
+    <label>Grantee Contact #1</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Grantees</relationshipLabel>
+    <relationshipName>Grantees</relationshipName>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

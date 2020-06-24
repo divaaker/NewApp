@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Grant_Report_Due_Date</fullName>
+    <active>true</active>
+    <description>If reporting is required and stage is funded,  grant report date is required</description>
+    <errorConditionFormula>And(Not( No_Reporting_Requirements__c ),
+ OR(ISPICKVAL( Stage__c ,&quot;VP Approval&quot;), 
+ISPICKVAL(Stage__c,&quot;CEO Approval&quot;),
+ISPICKVAL(Stage__c,&quot;Funded&quot;),
+ISPICKVAL(Stage__c,&quot;Ready for GAL&quot;),
+ISPICKVAL(Stage__c,&quot;GAL Submitted&quot;),
+ISPICKVAL(Stage__c,&quot;Reporting&quot;)), ISBLANK( Final_Report_Due__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>Final_Report_Due__c</errorDisplayField>
+    <errorMessage>Please Enter Final Report Due Date</errorMessage>
+</ValidationRule>

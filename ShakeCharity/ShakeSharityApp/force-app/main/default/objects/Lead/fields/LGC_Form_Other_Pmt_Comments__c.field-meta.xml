@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LGC_Form_Other_Pmt_Comments__c</fullName>
+    <description>LGC Enrollment Form - comments when choosing &quot;Other&quot; for Payment Method.</description>
+    <externalId>false</externalId>
+    <label>LGC Form Other Pmt Comments</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>TextArea</type>
+</CustomField>

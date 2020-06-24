@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__Product_Condition__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Product Condition</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>IS</fullName>
+                <default>false</default>
+                <label>IS</label>
+            </value>
+            <value>
+                <fullName>Starts With</fullName>
+                <default>false</default>
+                <label>Starts With</label>
+            </value>
+            <value>
+                <fullName>Ends With</fullName>
+                <default>false</default>
+                <label>Ends With</label>
+            </value>
+            <value>
+                <fullName>Includes</fullName>
+                <default>false</default>
+                <label>Includes</label>
+            </value>
+            <value>
+                <fullName>Is Recurring</fullName>
+                <default>false</default>
+                <label>Is Recurring</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

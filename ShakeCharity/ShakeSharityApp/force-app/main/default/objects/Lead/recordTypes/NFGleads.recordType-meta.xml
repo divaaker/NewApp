@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NFGleads</fullName>
+    <active>true</active>
+    <businessProcess>Leads from Events</businessProcess>
+    <description>For converting Leads info in NFG to Contact and Oppty records</description>
+    <label>NFGleads</label>
+    <picklistValues>
+        <picklist>GC_Pledge_Terms__c</picklist>
+        <values>
+            <fullName>Monthly %2484</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quarterly %24250</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Today %241000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Industry</picklist>
+        <values>
+            <fullName>Agriculture</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Apparel</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Banking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Biotechnology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemicals</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Communications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Consulting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Education</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electronics</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Energy</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engineering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entertainment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Finance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Food %26 Beverage</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Healthcare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hospitality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Machinery</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manufacturing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Media</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not For Profit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recreation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shipping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technology</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telecommunications</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Transportation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Utilities</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LGC_Form_Followup__c</picklist>
+        <values>
+            <fullName>Create new circle</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New GC Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Undecided need more info</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LGC_Form__c</picklist>
+        <values>
+            <fullName>Check</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Credit Card</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Latinx_Giving_Circle__c</picklist>
+        <values>
+            <fullName>Central Valley LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cisco Conexion LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Bay LGC %28men%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>East Bay LGC %28women%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inland Empire LGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LatinX LGBTQ GC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Latinos in Tech %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Los Angeles LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Peninsula LGC %28women%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pleasanton LGC %28women%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sacramento LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Diego LGC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco LGC %28men%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>San Francisco LGC %28women%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Santa Barbara LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solano County LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bay LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Southern East Bay LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wine Country LGC %28co-ed%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Conversacion Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gala Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone Inquiry</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Summit Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Name</picklist>
+        <values>
+            <fullName>Assemblymember</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Honorable</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mayor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mr%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mrs%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ms%2E</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prof%2E</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rating</picklist>
+        <values>
+            <fullName>Cold</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warm</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Preferred_Email__c</picklist>
+        <values>
+            <fullName>Alternate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Personal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>npe01__Preferred_Phone__c</picklist>
+        <values>
+            <fullName>Home</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mobile</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Work</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

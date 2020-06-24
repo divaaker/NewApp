@@ -68,9 +68,14 @@
     createRecordDataOrg : function(component,event,helper){
      	var vEIN = event.getSource().get('v.value'); 
         var vEINOrg = component.find("sOrg").get("v.value");
-     	helper.createRecordDataOrghelper(component, event, helper,vEIN);//get data from the helper   
+        if(vEIN != null){
+        	helper.createRecordDataOrghelper(component, event, helper,vEIN);//get data from the helper    
+        }
+        else {
+            alert('EIN/Tax Id is Required');
+        }     	   
         helper.searchDataOrgHelper(component, event, helper,vEINOrg);//get data from the helper
-       component.set("v.Spinner", true);
+       	component.set("v.Spinner", true);
     }, 
     
     // this function automatic call by aura:waiting event  

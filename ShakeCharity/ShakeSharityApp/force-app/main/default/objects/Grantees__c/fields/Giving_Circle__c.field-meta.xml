@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Giving_Circle__c</fullName>
+    <externalId>false</externalId>
+    <label>Giving Circle</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Central Coast Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Central Coast Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Central Valley Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Central Valley Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Cisco Conexion Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Cisco Conexion Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Contra Costa Latinx Giving Circle</fullName>
+                <default>false</default>
+                <label>Contra Costa Latinx Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Dropbox Latinx Giving Circle</fullName>
+                <default>false</default>
+                <label>Dropbox Latinx Giving Circle</label>
+            </value>
+            <value>
+                <fullName>East Bay Men&apos;s Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>East Bay Men&apos;s Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>East Bay Women&apos;s Latina Giving Circle</fullName>
+                <default>false</default>
+                <label>East Bay Women&apos;s Latina Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Inland Empire Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Inland Empire Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Kern County Giving Circle</fullName>
+                <default>false</default>
+                <label>Kern County Giving Circle</label>
+            </value>
+            <value>
+                <fullName>KPLA Latinx Giving Circle</fullName>
+                <default>false</default>
+                <label>KPLA Latinx Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Latinos in Tech Giving Circle</fullName>
+                <default>false</default>
+                <label>Latinos in Tech Giving Circle</label>
+            </value>
+            <value>
+                <fullName>LGBTQ Latinx Giving Circle</fullName>
+                <default>false</default>
+                <label>LGBTQ Latinx Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Los Angeles Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Los Angeles Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Merced Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Merced Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Orange County Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Orange County Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Peninsula Latina Giving Circle</fullName>
+                <default>false</default>
+                <label>Peninsula Latina Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Pleasanton Latina Giving Circle</fullName>
+                <default>false</default>
+                <label>Pleasanton Latina Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Sacramento Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Sacramento Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>San Diego Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>San Diego Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>San Francisco Men&apos;s Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>San Francisco Men&apos;s Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>San Francisco Women&apos;s Latina Giving Circle</fullName>
+                <default>false</default>
+                <label>San Francisco Women&apos;s Latina Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Silicon Valley Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Silicon Valley Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Solano Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Solano Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>South Bay Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>South Bay Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Stanislaus Community Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Stanislaus Community Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Tulare County Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Tulare County Latino Giving Circle</label>
+            </value>
+            <value>
+                <fullName>Wine Country Latino Giving Circle</fullName>
+                <default>false</default>
+                <label>Wine Country Latino Giving Circle</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CnP_PaaS__CnP_Countries__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>C&amp;P Countries</label>
+    <referenceTo>CnP_PaaS__CnP_Countries__c</referenceTo>
+    <relationshipLabel>C&amp;P Country State</relationshipLabel>
+    <relationshipName>CnP_Country_State</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Payment_Donation_Source__c</fullName>
+    <description>Donation from individual or corporate matching.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Individual or Corporate or NextGen.</inlineHelpText>
+    <label>Payment Donation Source</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Personal donation</fullName>
+                <default>false</default>
+                <label>Personal donation</label>
+            </value>
+            <value>
+                <fullName>Matching donation</fullName>
+                <default>false</default>
+                <label>Matching donation</label>
+            </value>
+            <value>
+                <fullName>NextGen from LCF</fullName>
+                <default>false</default>
+                <label>NextGen from LCF</label>
+            </value>
+            <value>
+                <fullName>Corporate Sponsorship</fullName>
+                <default>false</default>
+                <label>Corporate Sponsorship</label>
+            </value>
+            <value>
+                <fullName>Foundation Donation/Sponsorship</fullName>
+                <default>false</default>
+                <label>Foundation Donation/Sponsorship</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

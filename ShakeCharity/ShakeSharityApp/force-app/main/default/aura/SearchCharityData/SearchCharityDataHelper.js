@@ -29,6 +29,7 @@
 	},
     
     createRecordDataOrghelper : function(component,event,helper,vEIN){
+     component.set("v.Spinner", true);   
      var action = component.get('c.createRecord');
      var vEIN = event.getSource().get('v.value');
      console.log('vEIN=='+vEIN);   
@@ -39,8 +40,18 @@
         //store state of response
         var state = response.getState();
         if (state === "SUCCESS") {
-            console.log('Consollllllllllllll'+JSON.stringify(response.getReturnValue()) ); 
-            alert('Record has been created successfully');
+            component.set("v.Spinner", true);
+            var vResponse = JSON.stringify(response.getReturnValue());
+            console.log('Consollllllllllllll21'+JSON.stringify(response.getReturnValue()) ); 
+            console.log(vResponse);
+            if(vResponse != 'null'){
+            	alert('Record has been created successfully');    
+                component.set("v.Spinner", false); 
+            }
+            else{
+            	alert('EIN/Tax ID can not be found. Please make sure that the EIN/Tax ID is correct.'); 
+                component.set("v.Spinner", false); 
+            }
         }
       });
       $A.enqueueAction(action);   

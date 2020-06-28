@@ -1,6 +1,8 @@
 global class AWSCallout {
-     webservice static void callAwsgateway(string EIN) {
+     webservice static string callAwsgateway(string EIN) {
         Http http = new Http();
+ 		string sShakeEIN;
+        string sReturn = 'wrongEIN';
         List<ShakeCharity__c> UpdateShakeCharity = new List<ShakeCharity__c>();
 		List<ShakeCharity__c> createShakeCharity = new List<ShakeCharity__c>();
 		ShakeCharity__c  newShake = new ShakeCharity__c();
@@ -233,9 +235,16 @@ global class AWSCallout {
 					system.debug(parser.getText() );
 					parser.nextValue();
 				}
+                if (parser.getCurrentName() == 'AUTOMATIC_REVOCATION') {
+                    system.debug(parser.getText() );
+                    string sAutomaticRev = parser.getText();
+                    newShake.Automatic_Revocation__c=sAutomaticRev.replace('\r','') ;
+                    parser.nextValue();
+                }
 				if (parser.getCurrentName() == 'EIN') {
 					system.debug(parser.getText() );
                     newShake.EIN__c=parser.getText() ;
+                    sShakeEIN=parser.getText() ;
 					parser.nextValue();
 
 				}if (parser.getCurrentName() == 'STREET') {
@@ -300,22 +309,36 @@ global class AWSCallout {
 				}
 
 				if (parser.getCurrentName() == 'TAX_PERIOD') {
-					system.debug(parser.getText() );
-					string sTaxYear = parser.getText();
-					string sYear = ((String)sTaxYear).left(4);
-					string sMonth = ((String)sTaxYear).right(2);
-					newShake.Tax_Year__c=sMonth+'/'+sYear ;
-					parser.nextValue();
-				}
+                    system.debug(parser.getText() );
+                    string sTaxYear = parser.getText();
+                    if(sTaxYear != null){
+                        if(sTaxYear.isNumeric()){
+                            string sYear = ((String)sTaxYear).left(4);
+                            string sMonth = ((String)sTaxYear).right(2);
+                            newShake.Tax_Year__c=sMonth+'/'+sYear ;
+                        } 
+                        else {
+                            newShake.Tax_Year__c=parser.getText();   
+                        }
+                    }
+                    parser.nextValue(); 
+                }
 
 				if (parser.getCurrentName() == 'RULING') {
-					system.debug(parser.getText() );
-					string sRuleYear = parser.getText();
-					string sYear = ((String)sRuleYear).left(4);
-					string sMonth = ((String)sRuleYear).right(2);
-					newShake.Ruling_Date__c=sMonth+'/'+sYear ;
-					parser.nextValue();
-				}
+                    system.debug(parser.getText() );
+                    string sRuleYear = parser.getText();
+                    if(sRuleYear != null){
+                        if(sRuleYear.isNumeric()){
+                            string sYear = ((String)sRuleYear).left(4);
+                            string sMonth = ((String)sRuleYear).right(2);
+                            newShake.Ruling_Date__c=sMonth+'/'+sYear ;
+                        }
+                        else {
+                            newShake.Ruling_Date__c=parser.getText();    
+                        }
+                    }
+                    parser.nextValue(); 
+                }
 
 				 if (parser.getCurrentName() == 'ZIP') {
 					system.debug(parser.getText() );
@@ -347,6 +370,13 @@ global class AWSCallout {
                     newShake.Org_Name__c=parser.getText() ;
 					parser.nextValue();
 				}
+                
+                if (parser.getCurrentName() == 'REVOCATION_DATE') {
+                    system.debug(parser.getText() );
+                    newShake.Revocation_Date__c=parser.getText() ;
+                    //oShakeCharity.Foundation__c=parser.getText() ;
+                    parser.nextValue();
+                }
 
 				if (parser.getCurrentName() == 'FOUNDATION') {
 					system.debug(parser.getText() );
@@ -391,22 +421,22 @@ global class AWSCallout {
 				newShake.Account__c=sAccountId;
 				createShakeCharity.add(newShake);
 			} 
-		}
+		} 
         if(UpdateShakeCharity.size()>0){
             Update UpdateShakeCharity;   
         }
-		if(createShakeCharity.size()>0){
-            insert createShakeCharity;   
-        } 	
-
-        // Parse the JSON response
-        if (response.getStatusCode() != 201) {
-            System.debug('The status code returned was not expected: ' +
-            response.getStatusCode() + ' ' + response.getStatus());
-
-        } else {
-            System.debug(response.getBody());
-
+        if(sShakeEIN != null){
+         	if(createShakeCharity.size()>0){
+                insert createShakeCharity;
+                sReturn = 'success';
+                return sReturn;
+            }  
         }
+		else{
+			sReturn = 'wrongEIN';
+			return sReturn;
+        } 
+        return sReturn; 
     }
+	
 }

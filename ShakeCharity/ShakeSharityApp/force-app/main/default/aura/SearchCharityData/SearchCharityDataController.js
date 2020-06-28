@@ -72,7 +72,7 @@
         	helper.createRecordDataOrghelper(component, event, helper,vEIN);//get data from the helper    
         }
         else {
-            alert('EIN/Tax Id is Required');
+            alert('EIN/Tax ID field is blank. Please fill it out and try again.');
         }     	   
         helper.searchDataOrgHelper(component, event, helper,vEINOrg);//get data from the helper
        	component.set("v.Spinner", true);

@@ -10,10 +10,13 @@
         	<center>Data Retrieved.</center>
         </aura:if>
         <aura:if isTrue="{!v.sStatus == 'Failure'}">
-            <center>EIN/Tax Id is Required in Salesforce. </center>
+            <center>EIN/Tax ID can not be found. Please make sure that the EIN/Tax ID is correct. </center>
         </aura:if>
         <aura:if isTrue="{!v.sStatus == 'RecordExist'}">
         	<center>Record Already Exist.</center>
+        </aura:if>
+        <aura:if isTrue="{!v.sStatus == 'wrongEIN'}">
+        	<center>EIN/Tax ID can not be found. Please make sure that the EIN/Tax ID is correct.</center>
         </aura:if>
    </div>
 </aura:component>

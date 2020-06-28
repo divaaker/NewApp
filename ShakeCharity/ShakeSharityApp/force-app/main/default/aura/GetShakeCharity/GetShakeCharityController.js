@@ -20,7 +20,7 @@
         // Close the action panel
         var dismissActionPanel = $A.get("e.force:closeQuickAction");
         dismissActionPanel.fire();
-        location.reload();
+        //location.reload();
     }
 
 })

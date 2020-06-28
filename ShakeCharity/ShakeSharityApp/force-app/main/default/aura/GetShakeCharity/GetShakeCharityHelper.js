@@ -21,6 +21,9 @@
                 else if(result == "RecordExist"){
                 	component.set("v.sStatus",'RecordExist'); 
                 }
+                else if(result == "wrongEIN"){
+                	component.set("v.sStatus",'wrongEIN'); 
+                }
                 else{
                     component.set("v.sStatus",'Failure'); 
                 }

@@ -117,8 +117,8 @@
                                           onclick="{!c.openViewRecord}"/>
                     <aura:set attribute="else">
                       <lightning:button variant="bare-inverse" 
-                                          label="Create Record"
-                                          title="Create Record"
+                                          label="Get ShakeCharity Data"
+                                          title="Get ShakeCharity Data"
                                           iconName="utility:add"
                                           value="{!item.sEIN}"	
                                           onclick="{!c.createRecordDataOrg}"/>

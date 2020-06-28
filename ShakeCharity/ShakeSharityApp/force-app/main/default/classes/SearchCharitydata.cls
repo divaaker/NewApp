@@ -425,6 +425,7 @@ global class SearchCharitydata {
     @AuraEnabled
     public static List<ShakeCharity__c> createRecord(string EIN) {
         string sAccountId;
+        string sCharityEIN;
         Http http = new Http();
         List<ShakeCharity__c> createShakeCharity = new List<ShakeCharity__c>();
         system.debug('EIN====='+EIN );
@@ -484,10 +485,18 @@ global class SearchCharitydata {
 				oShakeCharity.Affiliation__c=parser.getText() ;
                 parser.nextValue();
             }
+            
+             if (parser.getCurrentName() == 'AUTOMATIC_REVOCATION') {
+                system.debug(parser.getText() );
+				string sAutomaticRev = parser.getText();
+                oShakeCharity.Automatic_Revocation__c=sAutomaticRev.replace('\r','') ;
+                parser.nextValue();
+            }
 
             if (parser.getCurrentName() == 'EIN') {
                 system.debug(parser.getText() );
                 oShakeCharity.EIN__c=parser.getText() ;
+                sCharityEIN=parser.getText() ;
                 if(sAccountId == null){
                 	newAcc.EIN__c=parser.getText();    
                 }
@@ -565,19 +574,33 @@ global class SearchCharitydata {
             if (parser.getCurrentName() == 'TAX_PERIOD') {
                 system.debug(parser.getText() );
                 string sTaxYear = parser.getText();
-                string sYear = ((String)sTaxYear).left(4);
-                string sMonth = ((String)sTaxYear).right(2);
-                oShakeCharity.Tax_Year__c=sMonth+'/'+sYear ;
-                parser.nextValue();
+                if(sTaxYear != null){
+                    if(sTaxYear.isNumeric()){
+                        string sYear = ((String)sTaxYear).left(4);
+                        string sMonth = ((String)sTaxYear).right(2);
+                        oShakeCharity.Tax_Year__c=sMonth+'/'+sYear ;
+                    } 
+                    else {
+                    	oShakeCharity.Tax_Year__c=parser.getText();   
+                    }
+                }
+                parser.nextValue(); 
             }
              
             if (parser.getCurrentName() == 'RULING') {
                 system.debug(parser.getText() );
                 string sRuleYear = parser.getText();
-                string sYear = ((String)sRuleYear).left(4);
-                string sMonth = ((String)sRuleYear).right(2);
-                oShakeCharity.Ruling_Date__c=sMonth+'/'+sYear ;
-                parser.nextValue();
+                if(sRuleYear != null){
+                    if(sRuleYear.isNumeric()){
+                        string sYear = ((String)sRuleYear).left(4);
+                        string sMonth = ((String)sRuleYear).right(2);
+                        oShakeCharity.Ruling_Date__c=sMonth+'/'+sYear ;
+                    }
+                    else {
+                        oShakeCharity.Ruling_Date__c=parser.getText();    
+                    }
+                }
+                parser.nextValue(); 
             }
 
             if (parser.getCurrentName() == 'ZIP') {
@@ -612,7 +635,14 @@ global class SearchCharitydata {
                 }
                 parser.nextValue(); 
             }
-
+			
+            if (parser.getCurrentName() == 'REVOCATION_DATE') {
+                system.debug(parser.getText() );
+                oShakeCharity.Revocation_Date__c=parser.getText() ;
+                //oShakeCharity.Foundation__c=parser.getText() ;
+                parser.nextValue();
+            }
+            
             if (parser.getCurrentName() == 'FOUNDATION') {
                 system.debug(parser.getText() );
                 //oShakeCharity.Foundation_Code__c=parser.getText() ;
@@ -662,9 +692,13 @@ global class SearchCharitydata {
             oShakeCharity.Account__c=sAccountId;
             createShakeCharity.add(oShakeCharity);
         }
-        if(createShakeCharity.size()>0){
-            insert createShakeCharity;   
+        system.debug('sCharityEIN==='+sCharityEIN);
+        if(createShakeCharity.size()>0 && sCharityEIN!= null){
+            insert createShakeCharity;
+            return createShakeCharity;
+        }else{
+        	 return null;    
         }
-        return createShakeCharity;
+       
     }
 }

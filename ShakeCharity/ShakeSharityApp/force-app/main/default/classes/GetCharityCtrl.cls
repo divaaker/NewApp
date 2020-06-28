@@ -11,8 +11,12 @@ public class GetCharityCtrl {
             if(lstAccount.size()>0){
                 for(Account oAcc : lstAccount){
                     if(oAcc.EIN__c != null){
-                        AWSCallout.callAwsgateway(oAcc.EIN__c);  
-                        sSuccess = 'Success';
+                        string sreturn = AWSCallout.callAwsgateway(oAcc.EIN__c);  
+                        system.debug(sreturn);
+                        if(sreturn == 'success')
+                       		 sSuccess = 'Success';
+                        else 
+                            sSuccess = sreturn;
                     }
                     else {
                          sSuccess = 'Failure';

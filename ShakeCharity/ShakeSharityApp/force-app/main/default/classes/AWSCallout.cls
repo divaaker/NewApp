@@ -1,4 +1,4 @@
-global class AWSCallout {
+global class AWSCallout {// CHECK
      webservice static string callAwsgateway(string EIN) {
         Http http = new Http();
  		string sShakeEIN;

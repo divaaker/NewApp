@@ -1,7 +1,7 @@
 @isTest
 private class CalloutClassTest {
      @isTest static void testCallout() {
-        // Set mock callout class 
+        // Set mock callout class //Check
         Test.setMock(HttpCalloutMock.class, new MockHttpResponseGenerator());
         
         // Call method to test.
